@@ -5,7 +5,7 @@ import uuid
 from decouple import config
 import io
 
-API_URL = config("https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDK2coCja1cwO1Ub28Q1a8fJ6v5FQYbseI")
+API_URL = config("API_URL")
 
 st.sidebar.title("Google's Gemini")
 system_prompt = st.sidebar.text_area("System Prompt:", value="You are a helpful AI Assistant.")
